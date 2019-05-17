@@ -91,7 +91,7 @@ def compute_target_weights(context, data, margin):
             long_total = 0.5 * margin
             short_total = -0.5 * margin
         else:
-            long_total = 1.0 * margin
+            long_total = 0.98 * margin
             short_total = 0.0
 
         long_weight = long_total / len(context.longs)
